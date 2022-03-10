@@ -9,7 +9,7 @@ kx = 256 / width
 
 for y in range(height):
     for x in range(width):
-        pos = abs(x-y)
+        pos = abs(x+y)
         r = 127 - int(pos*ky/2)
         g = 255 - int(pos*ky)
         b = int(pos*ky)
